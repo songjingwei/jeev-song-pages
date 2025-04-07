@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
-
-
 (async function() {
 if (process.env.NODE_ENV === 'development') {
   await setupDevPlatform();
