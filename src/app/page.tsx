@@ -19,13 +19,44 @@ export default function Home() {
           transition={{ duration: 0.8, type: "spring" }}
         >
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-8">
-            <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-              小易
-            </span>
-            <span className="mx-4 text-3xl text-gray-500">❤</span>
-            <span className="bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent">
-              小宋
-            </span>
+            {/* 小易链接 */}
+            <motion.div
+              className="inline-block"
+              whileHover={{ scale: 1.05, rotate: [-1, 0.5, -0.5] }}
+              transition={{
+                scale: { duration: 0.3 },
+                ratate: { duration: 0.6, repeat: Infinity }
+              }}
+            >
+              <Link href="/xiaoyi" className="elative bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent hover:from-teal-500 hover:to-emerald-600 transition-all duration-500">
+                <span className="relative z-10">小易</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-teal-200/30 to-emerald-200/30 rounded-full blur-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  initial={{ scale: 0.9 }}
+                />
+              </Link>
+            </motion.div>
+            <span className="mx-4 text-3xl text-red-500">❤</span>
+            {/* 小宋链接 */}
+            <motion.div
+              className="inline-block"
+              whileHover={{ scale: 1.05, rotate: [1, -0.5, 0.5] }}
+              transition={{
+                scale: { duration: 0.3 },
+                rotate: { duration: 0.6, repeat: Infinity }
+              }}
+            >
+              <Link
+                href="/xiaosong"
+                className="relative bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent hover:from-pink-500 hover:to-rose-600 transition-all duration-500"
+              >
+                <span className="relative z-10">小宋</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-pink-200/30 to-rose-200/30 rounded-full blur-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  initial={{ scale: 0.9 }}
+                />
+              </Link>
+            </motion.div>
             <br />
             <span className="text-3xl md:text-4xl font-medium text-gray-600 mt-4 inline-block">
               的快乐生活
