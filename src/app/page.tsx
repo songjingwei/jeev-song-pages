@@ -11,7 +11,7 @@ export default function Home() {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-emerald-100/30 clip-path-polygon transform rotate-45 blur-2xl" />
 
       {/* 主内容容器 */}
-      <div className="container relative h-screen flex flex-col items-center justify-center text-center">
+      <div className="container relative min-h-screen flex flex-col items-center justify-center text-center">
         {/* 标题动画容器 */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-8">
             {/* 小易链接 */}
             <motion.div
-              className="inline-block"
+              className="inline-block relative z-50"
               whileHover={{ scale: 1.05, rotate: [-1, 0.5, -0.5] }}
               whileTap={{ scale: 0.95 }}
               transition={{
@@ -40,7 +40,7 @@ export default function Home() {
             <span className="mx-4 text-3xl text-red-500">❤</span>
             {/* 小宋链接 */}
             <motion.div
-              className="inline-block"
+              className="inline-block relative z-50"
               whileHover={{ scale: 1.05, rotate: [1, -0.5, 0.5] }}
               whileTap={{ scale: 0.95 }}
               transition={{
