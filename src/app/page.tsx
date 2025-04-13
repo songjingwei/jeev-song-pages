@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-8">
             {/* 小易链接 */}
             <motion.div
-              className="inline-block relative z-50"
+              className="inline-block relative z-10"
               whileHover={{ scale: 1.05, rotate: [-1, 0.5, -0.5] }}
               whileTap={{ scale: 0.95 }}
               transition={{
@@ -29,14 +29,14 @@ export default function Home() {
                 rotate: { duration: 0.6, repeat: Infinity }
               }}
             >
-              <Link href="/xiaoyi" className="relative bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent hover:from-teal-500 hover:to-emerald-600 transition-all duration-500">
-                <span className="relative z-10">小易</span>
+              <Link href="/xiaoyi" className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent hover:from-teal-500 hover:to-emerald-600 transition-all duration-500">
+                <span className="z-10">小易</span>
               </Link>
             </motion.div>
             <span className="mx-4 text-3xl text-red-500">❤</span>
             {/* 小宋链接 */}
             <motion.div
-              className="inline-block relative z-50"
+              className="inline-block relative z-10"
               whileHover={{ scale: 1.05, rotate: [1, -0.5, 0.5] }}
               whileTap={{ scale: 0.95 }}
               transition={{
@@ -46,9 +46,9 @@ export default function Home() {
             >
               <Link
                 href="/xiaosong"
-                className="relative bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent hover:from-pink-500 hover:to-rose-600 transition-all duration-500"
+                className="bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent hover:from-pink-500 hover:to-rose-600 transition-all duration-500"
               >
-                <span className="relative z-10">小宋</span>
+                <span className="z-10">小宋</span>
               </Link>
             </motion.div>
             <br />
