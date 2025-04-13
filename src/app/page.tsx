@@ -31,10 +31,6 @@ export default function Home() {
             >
               <Link href="/xiaoyi" className="relative bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent hover:from-teal-500 hover:to-emerald-600 transition-all duration-500">
                 <span className="relative z-10">小易</span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-teal-200/30 to-emerald-200/30 rounded-full blur-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
-                  initial={{ scale: 0.9 }}
-                />
               </Link>
             </motion.div>
             <span className="mx-4 text-3xl text-red-500">❤</span>
@@ -53,10 +49,6 @@ export default function Home() {
                 className="relative bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent hover:from-pink-500 hover:to-rose-600 transition-all duration-500"
               >
                 <span className="relative z-10">小宋</span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-pink-200/30 to-rose-200/30 rounded-full blur-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
-                  initial={{ scale: 0.9 }}
-                />
               </Link>
             </motion.div>
             <br />
